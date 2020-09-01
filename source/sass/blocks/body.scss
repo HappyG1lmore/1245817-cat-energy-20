@@ -1,0 +1,61 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: white;
+
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url("../fonts/oswaldregular.woff2") format("woff2"),
+   url("../fonts/oswaldregular.woff") format("woff");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "oswald";
+  src: url("../fonts/oswaldmedium.woff2") format("woff2"),
+   url("../fonts/oswaldmedium.woff") format("woff");
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.button {
+  width: 280px;
+  height: 40px;
+  color: white;
+  background-color: $color-main;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-gray {
+  background-color: $color-back;
+  width: 100vw;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,177 @@
+.find-us {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.find-us__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 319px;
+
+  margin: 0 auto;
+}
+
+.find-us__invite {
+  @include title-small;
+  padding-bottom: 25px;
+  padding-top: 32px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.find-us__adress {
+  @include text-all;
+  padding-bottom: 25px;
+  padding-top: 32px;
+  padding-left: 18px;
+  font-family: $font-two;
+  line-height: 20px;
+  font-style: normal;
+}
+
+.find-us__map {
+  height: 365px;
+  width: 100vw;
+
+  display: flex;
+
+  .map__img {
+    width: 100vw;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.find-us__info {
+  margin: 0 auto;
+}
+
+.find-us__info-wrap {
+  display: flex;
+  width: 280px;
+}
+
+.find-us__info-wrap.find-us__info-wrap--catalog {
+  padding: 0;
+  margin-top: -3px;
+}
+
+@media (min-width: $tablet-width) {
+  .find-us {
+    width: 100vw;
+    display: flex;
+  }
+
+  .find-us__wrapper {
+    width: 708px;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 31px;
+  }
+
+  .find-us__info-wrap {
+    display: flex;
+    width: 625px;
+    margin: 0 auto;
+  }
+
+  .find-us__info-wrap.find-us__info-wrap--catalog {
+    padding-top: 40px;
+  }
+
+  .find-us__invite {
+    width: 155px;
+    font-size: 20px;
+    line-height: 25px;
+
+    padding-top: 29px;
+  }
+
+  .find-us__map {
+    height: 400px;
+    width: 100vw;
+
+    display: flex;
+
+    .map__img {
+      margin: 0 auto;
+    }
+  }
+
+  .find-us__adress {
+    width: 175px;
+    margin-left: auto;
+    text-align: right;
+
+    font-size: 16px;
+    line-height: 20px;
+    font-family: $font-two;
+
+    padding-top: 27px;
+
+    span {
+      display: block;
+      padding-top: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .find-us {
+    width: 100vw;
+    height: 400px;
+  }
+
+  .find-us__wrapper {
+    width: 1220px;
+    position: relative;
+
+    margin: 0 auto;
+  }
+
+  .find-us__info {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    background-color: white;
+    top: 95px;
+    left: 2px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .find-us__info-wrap {
+    width: 425px;
+    height: 100px;
+  }
+
+  .find-us__info-wrap.find-us__info-wrap--catalog {
+    padding-top: 4px;
+    padding-left: 0;
+  }
+
+  .find-us__invite {
+    padding: 0;
+    margin-top: 15px;
+  }
+
+  .find-us__adress {
+    padding: 0;
+    text-align: start;
+
+    margin-left: auto;
+    margin-top: 14px;
+  }
+
+  .find-us__adress.find-us__adress--catalog {
+    margin-right: -17px;
+  }
+
+  .find-us__map {
+    width: 100vw;
+  }
+}

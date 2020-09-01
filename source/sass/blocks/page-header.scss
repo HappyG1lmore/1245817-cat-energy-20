@@ -1,0 +1,136 @@
+.page-header a {
+  color: black;
+}
+
+.page-header ul {
+  list-style-type: none;
+}
+
+.page-header {
+  width: 320px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+}
+
+.page-header__wrapper {
+  display: flex;
+  min-width: 320px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page-header-top {
+  display: flex;
+  width: 100%;
+  height: 65px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.page-header-top::after {
+  content: "";
+  border: solid 1px #eeeeee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.page-header__logo {
+  width: 195px;
+  height: 38px;
+  background-image: url("../img/svg/logo-mobile.svg");
+  background-repeat: no-repeat;
+}
+
+.page-header__logo-link {
+  width: 195px;
+  height: 38px;
+  margin-bottom: 5px;
+  margin-right: 1px;
+}
+
+.page-header__logo-link.page-header__logo-link--click:hover {
+  opacity: 0.8;
+}
+
+.page-header__logo-link.page-header__logo-link--click:active {
+  opacity: 0.6;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    min-width: 768px;
+    min-height: 85px;
+
+    padding-bottom: 30px;
+  }
+
+  .page-header__wrapper {
+    min-width: 708px;
+    height: 75px;
+    justify-content: center;
+    padding-top: 25px;
+  }
+
+  .page-header__logo {
+    width: 175px;
+    height: 70px;
+    background-image: url("../img/svg/logo-tablet.svg");
+    background-repeat: no-repeat;
+
+    margin-top: 18px;
+  }
+
+  .page-header__logo-link {
+    height: auto;
+    padding-top: 5px;
+  }
+
+  .page-header-top {
+    width: 175px;
+    height: 75px;
+    margin-right: 90px;
+    padding: 0;
+  }
+
+  .page-header-top::after {
+    content: "";
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    min-width: 1300px;
+  }
+
+  .page-header__wrapper {
+    width: 1220px;
+    height: 75px;
+
+    justify-content: space-between;
+
+    margin-top: 25px;
+  }
+
+  .page-header__logo {
+    width: 205px;
+    height: 60px;
+    background-image: url("/img/svg/logo-desktop.svg");
+    background-repeat: no-repeat;
+    margin-top: 10px;
+  }
+
+  .page-header-top {
+    width: 205px;
+    height: 60px;
+    margin-right: 90px;
+  }
+}

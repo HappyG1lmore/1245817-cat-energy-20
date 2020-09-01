@@ -1,0 +1,142 @@
+
+.site-list {
+  display: block;
+  min-height: auto;
+}
+
+.site-list a {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.site-list__btns {
+  @include list-reset;
+}
+
+.site-list__item {
+  height: 66px;
+  position: relative;
+  display: flex;
+}
+
+.site-list__item::after {
+  content: "";
+  border: solid 1px #eeeeee;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.site-list a[href] {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.site-list__link {
+  width: auto;
+  position: relative;
+  height: 45%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.site-list__link.active::after {
+  content: "";
+
+  display: none;
+
+  border: solid 1px $color-main;
+  position: absolute;
+  bottom: -18%;
+  left: 1px;
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    min-height: 65px;
+    margin-left: 3px;
+  }
+
+  .site-list__btns {
+    min-height: 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .site-list a {
+    font-size: 18px;
+    line-height: 24.86px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .site-list__link.active::after {
+    content: "";
+
+    display: block;
+  }
+
+  .site-list__item::after {
+    content: "";
+    display: none;
+  }
+
+  .site-list__item {
+    padding-right: 35px;
+  }
+
+  .site-list__item:last-child {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list a {
+    font-size: 20px;
+    line-height: 24.86px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: $gray;
+  }
+
+  .site-list__btns {
+    justify-content: flex-end;
+  }
+
+  .site-list__item.site-list__item--catalog a {
+    color: black;
+  }
+
+
+  .site-list__link.active::after {
+    content: "";
+
+    display: block;
+    border: solid 2px #ffffff;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    width: 100%;
+  }
+
+  .site-list__link.site-list__link--catalog.active::after {
+    content: "";
+
+    border: solid 2px $color-main;
+    position: absolute;
+    bottom: -20%;
+    left: 0;
+    width: 100%;
+  }
+}

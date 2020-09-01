@@ -1,0 +1,34 @@
+.social__link {
+  fill: #333333;
+}
+
+.social__link:hover {
+  fill: #68b738;
+}
+
+.social__link:active {
+  fill: #68b738;
+  opacity: 0.3;
+}
+
+.social__item.social__item--insta {
+  margin-right: 39px;
+  margin-left: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .social__link.social__link--vk svg {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link.social__link--insta svg {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__link.social__link--fb svg {
+    width: 14px;
+    height: 28px;
+  }
+}

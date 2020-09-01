@@ -1,0 +1,54 @@
+.field {
+  font-family: $font-one;
+  line-height: 30px;
+  flex-grow: 1;
+
+  padding: 15px 13px;
+
+  opacity: 0.5;
+  height: 46px;
+}
+
+.field:hover {
+  opacity: 1;
+}
+
+.field [type="number"] {
+  appearance: textfield;
+}
+
+.field::-webkit-outer-spin-button,
+.field::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.field:focus {
+  opacity: 1;
+  color: black;
+
+  outline: none;
+  border: 2px solid black;
+}
+
+.field:focus + .owner-data__icon.owner-data__icon--email,
+.field:focus + .owner-data__icon.owner-data__icon--phone {
+  opacity: 1;
+  fill: $green;
+}
+
+.field:invalid {
+  outline: none;
+  border: 2px solid red;
+}
+
+.field:invalid + .owner-data__icon.owner-data__icon--email,
+.field:invalid + .owner-data__icon.owner-data__icon--phone {
+  fill: red;
+}
+
+@media (min-width: $tablet-width) {
+  .field {
+    height: 52px;
+    padding: 15px 17px;
+  }
+}

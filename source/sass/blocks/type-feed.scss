@@ -1,0 +1,344 @@
+.type-feed__title {
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+.type-feed__text {
+  @include text-all;
+  font-family: $font-two;
+  margin: 0;
+  padding-bottom: 22px;
+
+  width: 240px;
+}
+
+.type-feed__text::after {
+  content: "";
+
+  position: absolute;
+  border: solid 1px black;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  opacity: 0.1;
+}
+
+.type-feed__link-catalog {
+  font-family: $font-one;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  padding-top: 19px;
+  position: relative;
+
+  a {
+    color: black;
+  }
+}
+
+.type-feed__link-catalog::before {
+  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24.2 11' style='enable-background:new 0 0 24.2 11;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0 %7B fill: %233F4242; %7D %3C/style%3E%3Cpolygon class='st0' points='17.6,0 24.2,5.5 17.6,11 17.6,6.6 0,6.6 0,4.4 17.6,4.4 '/%3E%3C/svg%3E%0A");
+
+  width: 25px;
+  height: 15px;
+  position: absolute;
+  right: -37px;
+  top: 18px;
+}
+
+.type-feed__link-catalog:hover::before {
+  content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' width='34px' height='14px' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 32 11' style='enable-background:new 0 0 32 11;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0 %7B fill: %233F4242; %7D %3C/style%3E%3Cpolygon class='st0' points='25.4,0 32,5.5 25.4,11 25.4,6.6 0,6.6 0,4.4 25.4,4.4 '/%3E%3C/svg%3E%0A");
+
+  width: 35px;
+  height: 15px;
+
+  top: -1px;
+  right: -60px;
+
+  cursor: pointer;
+}
+
+.type-feed__link-catalog:active,
+.type-feed__link-catalog:active::before {
+  opacity: 0.3;
+}
+
+
+.type-feed__item {
+  background-color: $color-back;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  height: 266px;
+
+  position: relative;
+}
+
+.type-feed__item.type-feed__item--mass-gain {
+  margin-bottom: 40px;
+}
+
+.type-feed__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 240px;
+  height: auto;
+}
+
+.type-feed__title-wrap {
+  display: flex;
+  align-items: center;
+
+  padding-bottom: 23px;
+}
+
+.type-feed__circle {
+  width: 50px;
+  height: 50px;
+  background-color: #68b738;
+  border-radius: 50%;
+
+  margin-top: 17px;
+  margin-left: 2px;
+}
+
+.type-feed__cat-slim {
+  position: absolute;
+
+  width: 35px;
+  height: 49px;
+
+  left: 30px;
+  top: 23px;
+}
+
+.type-feed__cat-pro {
+  width: 70px;
+  position: absolute;
+
+  left: 10px;
+  top: 36px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .type-feed {
+    margin-bottom: 48px;
+  }
+
+  .type-feed__title {
+    @include title-top;
+    line-height: 37, 02;
+
+    padding-top: 68px;
+    padding-bottom: 2px;
+    margin: 0;
+  }
+
+  .type-feed__title.type-feed__title--mass-gain {
+    padding-top: 71px;
+  }
+
+  .type-feed__text {
+    @include title-small;
+    line-height: 24px;
+    font-family: $font-two;
+
+    padding-bottom: 56px;
+    margin-left: -1px;
+
+    width: 375px;
+  }
+
+  .type-feed__link-catalog {
+    font-size: 20px;
+    line-height: 20px;
+
+    padding: 0;
+  }
+
+  .type-feed__item {
+    height: 372px;
+    width: 708px;
+    justify-content: start;
+    align-items: flex-start;
+
+    margin-bottom: 30px;
+    margin-top: -3px;
+  }
+
+  .type-feed__item.type-feed__item--mass-gain {
+    margin-bottom: 40px;
+  }
+
+  .type-feed__wrapper {
+    width: 370px;
+    height: auto;
+    margin-left: 53px;
+  }
+
+  .type-feed__text::after {
+    content: "";
+
+    display: none;
+  }
+
+  .type-feed__link-catalog::before {
+    right: -48px;
+    top: -3px;
+  }
+
+  .type-feed__circle {
+    position: absolute;
+    background-size: 200px;
+    background-position: center;
+
+    width: 200px;
+    height: 200px;
+    right: 62px;
+    top: 75px;
+  }
+
+  .type-feed__circle.type-feed__circle--mass-gain {
+    top: 77px;
+    right: 60px;
+
+    padding-right: 5px;
+  }
+
+  .type-feed__text.type-feed__text--mass-gain {
+    width: 340px;
+  }
+
+  .type-feed__cat-slim {
+    width: 140px;
+    height: 194px;
+
+    left: 476px;
+    top: 80px;
+
+    position: absolute;
+    z-index: 1;
+  }
+
+  .type-feed__cat-pro {
+    width: 268px;
+    height: 120px;
+    top: 134px;
+    left: 412px;
+
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type-feed {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: -50px;
+    margin-bottom: 32px;
+  }
+
+  .type-feed__item.type-feed__item--los-weight {
+    margin-right: 80px;
+  }
+
+  .type-feed__title {
+    @include title-top;
+    line-height: 37, 02;
+    margin-right: auto;
+    margin-left: 62px;
+    margin-top: 2px;
+
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .type-feed__text {
+    @include title-small;
+    line-height: 24px;
+    font-family: $font-two;
+
+    width: 465px;
+
+    padding-bottom: 31px;
+    margin-left: -2px;
+  }
+
+  .type-feed__text.type-feed__text--mass-gain {
+    width: 465px;
+  }
+
+  .type-feed__link-catalog {
+    font-size: 20px;
+    line-height: 20px;
+
+    margin-left: -2px;
+  }
+
+  .type-feed__item {
+    height: 372px;
+    width: 708px;
+  }
+
+  .type-feed__title.type-feed__title--mass-gain {
+    padding-top: 65px;
+  }
+
+  .type-feed__wrapper {
+    width: 470px;
+    height: auto;
+    padding-left: 55px;
+    margin: 0;
+  }
+
+  .type-feed__title-wrap {
+    padding-bottom: 9px;
+  }
+
+  .type-feed__circle {
+    position: static;
+    width: 100px;
+    height: 100px;
+
+    margin-left: -3px;
+    margin-top: 7px;
+  }
+
+  .type-feed__circle.type-feed__circle--mass-gain {
+    margin-left: -3px;
+    margin-top: 7px;
+  }
+
+  .type-feed__cat-slim {
+    width: 70px;
+    height: 97px;
+
+    left: 66px;
+    top: 40px;
+
+    position: absolute;
+  }
+
+  .type-feed__cat-pro {
+    width: 134px;
+    height: 56px;
+
+    left: 34px;
+    top: 68px;
+
+    position: absolute;
+  }
+}

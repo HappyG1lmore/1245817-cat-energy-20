@@ -1,0 +1,131 @@
+.program {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+
+  padding-bottom: 28px;
+}
+
+.program__form {
+  display: flex;
+  flex-direction: column;
+
+  @include title-small;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  input {
+    @include title-small;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+
+  textarea {
+    @include title-small;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.program ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.program__title {
+  @include title-top;
+  line-height: 60px;
+
+  margin: 0;
+  padding-bottom: 26px;
+  padding-top: 15px;
+}
+
+.program__info {
+  @include text-all;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  margin: 0;
+  padding-bottom: 39px;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    width: 708px;
+    padding-bottom: 110px;
+    padding-top: 35px;
+
+
+    margin: 0 auto;
+  }
+
+  .program__wrapper {
+    width: 630px;
+    margin: 0 auto;
+  }
+
+  .program__title {
+    @include title-top-tab;
+    line-height: 60px;
+
+    width: 708px;
+    display: block;
+
+    padding-bottom: 55px;
+    padding-top: 0;
+  }
+
+  .program__info {
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
+    width: 325px;
+
+    padding-bottom: 66px;
+  }
+
+  .program__form {
+    @include title-small-tab;
+    line-height: 20px;
+    text-transform: uppercase;
+
+    input {
+      @include title-small-tab;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+
+    textarea {
+      @include title-small-tab;
+      line-height: 30px;
+      text-transform: uppercase;
+    }
+  }
+
+  .program__form .options::before,
+  .program__form .options::after {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 1220px;
+
+    padding-bottom: 83px;
+  }
+
+  .program__title {
+    padding-top: 23px;
+  }
+
+  .program__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .program__wrapper {
+    width: 1220px;
+  }
+}
