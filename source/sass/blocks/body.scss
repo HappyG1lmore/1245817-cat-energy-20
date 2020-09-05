@@ -6,7 +6,6 @@ body {
   line-height: 18px;
   font-weight: 400;
   background-color: white;
-
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -22,7 +21,7 @@ a {
 }
 
 @font-face {
-  font-family: "oswald";
+  font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff2") format("woff2"),
    url("../fonts/oswaldregular.woff") format("woff");
   font-display: swap;
@@ -31,7 +30,7 @@ a {
 }
 
 @font-face {
-  font-family: "oswald";
+  font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff2") format("woff2"),
    url("../fonts/oswaldmedium.woff") format("woff");
   font-display: swap;

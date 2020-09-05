@@ -50,9 +50,7 @@
 
 .site-list__link.active::after {
   content: "";
-
   display: none;
-
   border: solid 1px $color-main;
   position: absolute;
   bottom: -18%;
@@ -82,7 +80,6 @@
 
   .site-list__link.active::after {
     content: "";
-
     display: block;
   }
 
@@ -106,7 +103,6 @@
     line-height: 24.86px;
     font-weight: 400;
     text-transform: uppercase;
-
     color: $gray;
   }
 
@@ -121,7 +117,6 @@
 
   .site-list__link.active::after {
     content: "";
-
     display: block;
     border: solid 2px #ffffff;
     position: absolute;
@@ -132,7 +127,6 @@
 
   .site-list__link.site-list__link--catalog.active::after {
     content: "";
-
     border: solid 2px $color-main;
     position: absolute;
     bottom: -20%;

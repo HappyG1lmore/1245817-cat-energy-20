@@ -2,7 +2,6 @@
   @include title-middle;
   margin: 0;
   padding-bottom: 15px;
-
   position: relative;
 }
 
@@ -37,17 +36,14 @@
   width: 65px;
   text-align: center;
   background-color: $gray;
-
   margin-top: -3px;
   padding-left: 1px;
   padding-right: 1px;
-
   z-index: 1;
 }
 
 .result__time {
   .result__info {
-
     width: 80px;
   }
 }

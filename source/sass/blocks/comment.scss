@@ -3,11 +3,9 @@
   line-height: 24px;
   text-transform: none;
   background-color: white;
-
   padding-right: 20px;
   margin-bottom: 34px;
   width: max-content;
-
   position: relative;
   display: block;
 }
@@ -24,9 +22,7 @@
 .comment__text.comment__text--textarea {
   font-family: $font-one;
   line-height: 30px;
-
   padding: 9px 12px;
-
   opacity: 0.5;
   height: 150px;
 }
@@ -38,7 +34,6 @@
 .comment__text.comment__text--textarea:focus {
   opacity: 1;
   color: black;
-
   outline: none;
   border: 2px solid black;
   padding: 8px 11px;
@@ -58,13 +53,10 @@
   .comment__legend {
     @include title-middle-tab;
     line-height: 36px;
-
     padding-left: 36px;
     padding-right: 38px;
     padding-bottom: 42px;
-
     margin-left: -35px;
-
     width: 260px;
   }
 
@@ -79,7 +71,6 @@
     top: 20px;
     left: 0;
     width: 100vw;
-
     z-index: -1;
   }
 
@@ -90,7 +81,6 @@
     top: 20px;
     right: 0;
     width: 100vw;
-
     z-index: -1;
   }
 
@@ -120,7 +110,6 @@
 
   .comment__legend {
     margin-left: -37px;
-
     padding-left: 36px;
     padding-right: 40px;
     padding-bottom: 42px;

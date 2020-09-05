@@ -60,10 +60,18 @@
   }
 }
 
+
+
 .exemplar__picture {
   width: 311px;
   height: 232px;
   margin-bottom: 52px;
+}
+
+.exemplar__picture--after {
+  left: 0;
+  top: 0;
+  z-index: 3;
 }
 
 .exemplar__btns-wrap {
@@ -76,19 +84,15 @@
   margin: 0;
   padding-left: 10px;
   display: flex;
-
   position: absolute;
-
   bottom: 31px;
   left: 48px;
-
   width: 220px;
 
   button {
     border: none;
     background: none;
     font-family: $font-one;
-
     font-size: 16px;
     line-height: 20px;
     font-weight: 400;
@@ -105,14 +109,12 @@
     width: 100vw;
     background-color: transparent;
     position: relative;
-
     margin-bottom: 110px;
   }
 
   .exemplar::after {
     content: "";
     background-color: $color-back;
-
     width: 100%;
     height: 462px;
     position: absolute;
@@ -128,16 +130,13 @@
   .exemplar__title {
     font-size: 60px;
     line-height: 60px;
-
     position: relative;
-
     padding-top: 45px;
     padding-bottom: 63px;
   }
 
   .exemplar__title::before {
     content: "";
-
     border: solid 1px #eeeeee;
     position: absolute;
     top: 0;
@@ -148,13 +147,11 @@
   .exemplar__info {
     font-size: 16px;
     line-height: 24px;
-
     font-family: $font-two;
-
     padding-bottom: 70px;
-
     width: 680px;
   }
+
 
   .exemplar__expenses {
     font-size: 20px;
@@ -162,7 +159,6 @@
     text-align: right;
     margin-left: auto;
     margin-top: -5px;
-
     width: 175px;
 
     span {
@@ -180,17 +176,25 @@
   .exemplar__result {
     display: flex;
     justify-content: flex-start;
-
     margin: 0;
     padding-left: 15px;
     width: 367px;
   }
 
-  .exemplar__picture {
-    width: 660px;
-    height: 500px;
-    margin-bottom: 19px;
-    margin-left: -15px;
+  .exemplar__picture--before {
+    width: 680px;
+    height: 515px;
+    margin-bottom: 37px;
+    margin-top: -12px;
+    margin-left: 5px;
+  }
+
+  .exemplar__picture--after {
+    width: 670px;
+    height: 510px;
+    margin-bottom: 41px;
+    margin-top: -12px;
+    margin-left: 14px;
   }
 
   .exemplar__after {
@@ -203,21 +207,19 @@
     width: 570px;
     margin-left: auto;
     margin-right: auto;
-
     padding-bottom: 0;
     margin-top: 20px;
   }
 
   .exemplar__btns-wrap {
     position: relative;
-    width: 650px;
+    width: auto;
     margin: 0 auto;
   }
 
   .exemplar__btns {
-    bottom: -1px;
-    left: 25px;
-
+    bottom: 0;
+    left: 41px;
     width: 590px;
 
     button {
@@ -235,9 +237,8 @@
 
 @media (min-width: $desktop-width) {
   .exemplar {
-    width: 1400px;
+    width: 1300px;
     height: 595px;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: start;
@@ -248,7 +249,6 @@
   .exemplar::after {
     width: 150%;
     height: 462px;
-
     left: -25%;
     top: 135px;
   }
@@ -256,22 +256,22 @@
   .exemplar__wrapper {
     width: 450px;
     display: flex;
-
     padding-bottom: 65px;
     margin-right: 200px;
   }
 
   .exemplar__btns-wrap {
     position: relative;
-    width: 650px;
+    width: 700px;
     margin: 0 auto;
+    margin-right: -10px;
+    margin-top: -2px;
   }
 
   .exemplar__info-wrap {
     width: 450px;
     display: flex;
     flex-direction: column;
-
     padding-left: 41px;
   }
 
@@ -286,7 +286,6 @@
     margin-left: 0;
     margin-right: auto;
     padding-top: 41px;
-
     width: 475px;
     text-align: start;
 
@@ -301,26 +300,33 @@
   .exemplar__info {
     font-size: 16px;
     line-height: 24px;
-
     width: 435px;
-
     margin-bottom: 14px;
   }
 
   .exemplar__title {
-    padding-bottom: 145px;
+    padding-bottom: 143px;
     padding-top: 0;
   }
 
   .exemplar__title::before {
     content: "";
-
     display: none;
   }
 
-  .exemplar__picture {
-    margin-top: -40px;
-    margin-left: -55px;
+  .exemplar__picture--before {
+    width: 680px;
+    height: 520px;
+    margin-top: -60px;
+    margin-bottom: 0;
+    margin-left: -37px;
+  }
+
+  .exemplar__picture--after {
+    height: 520px;
+    margin-top: -60px;
+    margin-left: -30px;
+    margin-bottom: 0;
   }
 
   .exemplar__after {
@@ -332,11 +338,9 @@
     margin: 0;
     display: flex;
     width: 590px;
-
     position: absolute;
-
-    bottom: 0;
-    left: 0;
+    bottom: -58px;
+    left: 23px;
 
     .after {
       margin-left: auto;
@@ -346,7 +350,6 @@
       font-size: 20px;
       line-height: 20px;
       text-transform: uppercase;
-
       padding-left: 40px;
     }
   }

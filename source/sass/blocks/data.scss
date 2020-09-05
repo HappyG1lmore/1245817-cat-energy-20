@@ -13,6 +13,10 @@
   padding-bottom: 0;
 }
 
+.data__field {
+  -moz-appearance:textfield;
+}
+
 @media (min-width: $tablet-width) {
   .data__list {
     padding-bottom: 73px;

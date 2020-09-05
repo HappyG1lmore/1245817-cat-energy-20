@@ -43,4 +43,8 @@
   .main-nav__button {
     display: none;
   }
+
+  .main-nav.main-nav--closed ~ .site-list {
+    display: block;
+  }
 }

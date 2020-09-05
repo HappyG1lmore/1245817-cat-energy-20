@@ -13,18 +13,15 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
   position: relative;
 }
 
 .advantages__item {
   font-family: $font-two;
-
   @include text-all;
   line-height: 18px;
   padding-bottom: 20px;
   padding-left: 1px;
-
   display: flex;
 }
 
@@ -49,7 +46,6 @@
   background-color: $green;
   width: 60px;
   height: 60px;
-
   margin-right: 20px;
   display: flex;
   justify-content: center;
@@ -73,7 +69,6 @@
     padding-top: 15px;
 
     position: relative;
-
     display: flex;
     flex-direction: column;
 
@@ -101,47 +96,38 @@
   .advantages__icon {
     width: 80px;
     height: 80px;
-
     margin-bottom: 30px;
   }
 
-  .advantages__icon1::after {
+  .advantages__icon--helpful::after {
     content: url("../../img/l1.png");
     position: absolute;
-
     right: 15px;
     top: 10px;
-
     z-index: -1;
   }
 
-  .advantages__icon2::after {
+  .advantages__icon--powder::after {
     content: url("../../img/l2.png");
     position: absolute;
-
     right: -20px;
     top: 10px;
-
     z-index: -1;
   }
 
-  .advantages__icon3::after {
+  .advantages__icon--eating::after {
     content: url("../../img/l3.png");
     position: absolute;
-
     right: -22px;
     top: 12px;
-
     z-index: -1;
   }
 
-  .advantages__icon4::after {
+  .advantages__icon--fast::after {
     content: url("../../img/l4.png");
     position: absolute;
-
     right: -30px;
     top: 14px;
-
     z-index: -1;
   }
 

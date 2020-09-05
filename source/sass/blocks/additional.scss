@@ -116,9 +116,7 @@
   color: white;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
-
   margin-top: 39px;
-
   position: relative;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -173,7 +171,6 @@
     top: 20px;
     right: -10%;
     width: 100vw;
-
     z-index: -1;
   }
 
@@ -184,7 +181,6 @@
     bottom: 91px;
     left: -500%;
     width: 1000%;
-
     z-index: -1;
   }
 
@@ -193,7 +189,6 @@
     @include title-small-tab;
     line-height: 16px;
     text-transform: uppercase;
-
     margin: 0;
   }
 
@@ -201,7 +196,6 @@
     @include text-all-tab;
     line-height: 20px;
     font-family: $font-two;
-
     width: 75%;
     margin-left: auto;
     justify-content: flex-end;
@@ -250,7 +244,6 @@
     height: 140px;
     border: 2px solid $color-back;
     border-bottom: none;
-
     display: flex;
   }
 
@@ -271,9 +264,7 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
     width: 708px;
     height: 200px;
-
     margin-top: 68px;
-
     justify-content: flex-start;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -326,14 +317,12 @@
     height: 25%;
     border-right: none;
     border-left: none;
-
     margin-bottom: 0;
   }
 
   .additional-item__info {
     width: 325px;
     padding-bottom: 0;
-
     justify-content: flex-start;
 
     td:last-child {
@@ -347,7 +336,6 @@
     margin: 0;
     flex-wrap: wrap;
     align-items: center;
-
     padding-bottom: 10px;
 
     td:first-child {
@@ -373,7 +361,6 @@
     padding-left: 40px;
     padding-right: 35px;
     margin-left: -40px;
-
     width: max-content;
     background-color: white;
   }

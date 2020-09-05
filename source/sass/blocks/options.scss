@@ -14,14 +14,12 @@
 .options {
   padding-top: 23px;
   padding-bottom: 22px;
-
   position: relative;
 }
 
 .options__input {
   display: none;
   position: absolute;
-
   appearance: none;
 }
 
@@ -30,7 +28,6 @@
   display: flex;
   align-items: center;
   height: 30px;
-
   position: relative;
   cursor: pointer;
 }
@@ -114,7 +111,6 @@
   .options__label {
     padding-left: 60px;
     margin-left: 5px;
-
     height: 40px;
   }
 

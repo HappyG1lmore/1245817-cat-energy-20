@@ -14,7 +14,6 @@
   font-family: $font-two;
   margin: 0;
   padding-bottom: 22px;
-
   width: 240px;
 }
 
@@ -58,7 +57,6 @@
 
   width: 35px;
   height: 15px;
-
   top: -1px;
   right: -60px;
 
@@ -79,7 +77,6 @@
   display: flex;
   justify-content: center;
   height: 266px;
-
   position: relative;
 }
 
@@ -98,7 +95,6 @@
 .type-feed__title-wrap {
   display: flex;
   align-items: center;
-
   padding-bottom: 23px;
 }
 
@@ -107,17 +103,14 @@
   height: 50px;
   background-color: #68b738;
   border-radius: 50%;
-
   margin-top: 17px;
   margin-left: 2px;
 }
 
 .type-feed__cat-slim {
   position: absolute;
-
   width: 35px;
   height: 49px;
-
   left: 30px;
   top: 23px;
 }
@@ -125,7 +118,6 @@
 .type-feed__cat-pro {
   width: 70px;
   position: absolute;
-
   left: 10px;
   top: 36px;
 }
@@ -139,7 +131,6 @@
   .type-feed__title {
     @include title-top;
     line-height: 37, 02;
-
     padding-top: 68px;
     padding-bottom: 2px;
     margin: 0;
@@ -153,17 +144,14 @@
     @include title-small;
     line-height: 24px;
     font-family: $font-two;
-
     padding-bottom: 56px;
     margin-left: -1px;
-
     width: 375px;
   }
 
   .type-feed__link-catalog {
     font-size: 20px;
     line-height: 20px;
-
     padding: 0;
   }
 
@@ -172,7 +160,6 @@
     width: 708px;
     justify-content: start;
     align-items: flex-start;
-
     margin-bottom: 30px;
     margin-top: -3px;
   }
@@ -189,7 +176,6 @@
 
   .type-feed__text::after {
     content: "";
-
     display: none;
   }
 
@@ -202,7 +188,6 @@
     position: absolute;
     background-size: 200px;
     background-position: center;
-
     width: 200px;
     height: 200px;
     right: 62px;
@@ -212,7 +197,6 @@
   .type-feed__circle.type-feed__circle--mass-gain {
     top: 77px;
     right: 60px;
-
     padding-right: 5px;
   }
 
@@ -223,10 +207,8 @@
   .type-feed__cat-slim {
     width: 140px;
     height: 194px;
-
     left: 476px;
     top: 80px;
-
     position: absolute;
     z-index: 1;
   }
@@ -236,7 +218,6 @@
     height: 120px;
     top: 134px;
     left: 412px;
-
     position: absolute;
     z-index: 1;
   }
@@ -246,7 +227,6 @@
   .type-feed {
     display: flex;
     justify-content: space-between;
-
     margin-top: -50px;
     margin-bottom: 32px;
   }
@@ -261,7 +241,6 @@
     margin-right: auto;
     margin-left: 62px;
     margin-top: 2px;
-
     padding-top: 65px;
     padding-bottom: 65px;
   }
@@ -270,9 +249,7 @@
     @include title-small;
     line-height: 24px;
     font-family: $font-two;
-
     width: 465px;
-
     padding-bottom: 31px;
     margin-left: -2px;
   }
@@ -284,7 +261,6 @@
   .type-feed__link-catalog {
     font-size: 20px;
     line-height: 20px;
-
     margin-left: -2px;
   }
 
@@ -312,7 +288,6 @@
     position: static;
     width: 100px;
     height: 100px;
-
     margin-left: -3px;
     margin-top: 7px;
   }
@@ -325,20 +300,16 @@
   .type-feed__cat-slim {
     width: 70px;
     height: 97px;
-
     left: 66px;
     top: 40px;
-
     position: absolute;
   }
 
   .type-feed__cat-pro {
     width: 134px;
     height: 56px;
-
     left: 34px;
     top: 68px;
-
     position: absolute;
   }
 }

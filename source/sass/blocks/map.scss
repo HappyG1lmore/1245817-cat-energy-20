@@ -6,7 +6,6 @@
 @media (min-width: $tablet-width) {
   .map__img {
     margin-top: 35px;
-
     width: 767px;
     height: 400px;
   }
@@ -15,10 +14,8 @@
 @media (min-width: $desktop-width) {
   .map__img {
     background-size: 767px 400px;
-
     width: 100vw;
     height: 400px;
-
     margin-top: 0;
   }
 }
