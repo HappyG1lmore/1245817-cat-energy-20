@@ -3,13 +3,10 @@
   line-height: 24px;
   text-transform: none;
   background-color: white;
-
   padding-right: 20px;
   padding-top: 7px;
   margin-bottom: 33px;
-
   width: 210px;
-
   position: relative;
   display: block;
 }
@@ -23,7 +20,6 @@
   position: absolute;
   background-color: white;
   opacity: 0.5;
-
   width: 17px;
   height: 13px;
   top: 14px;
@@ -34,7 +30,6 @@
   position: absolute;
   background-color: white;
   opacity: 0.5;
-
   width: 20px;
   height: 20px;
   top: 12px;
@@ -72,15 +67,11 @@
   .owner-data__legend {
     @include title-middle-tab;
     line-height: 36px;
-
     padding: 0 15px;
-
     width: max-content;
-
     margin: 0;
     margin-left: -35px;
     margin-top: -3px;
-
     padding-left: 36px;
     padding-right: 38px;
     padding-bottom: 75px;
@@ -102,7 +93,6 @@
     top: 20px;
     left: 0;
     width: 100vw;
-
     z-index: -1;
   }
 
@@ -113,7 +103,6 @@
     top: 20px;
     right: 0;
     width: 100vw;
-
     z-index: -1;
   }
 
@@ -147,10 +136,8 @@
 
   .owner-data__legend {
     width: 590px;
-
     margin-left: -37px;
     margin-top: -3px;
-
     padding-left: 36px;
     padding-right: 40px;
     padding-bottom: 75px;

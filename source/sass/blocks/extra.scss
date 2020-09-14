@@ -53,7 +53,6 @@
   top: 0;
   width: 30px;
   height: 30px;
-
   border: 1px solid #cdcdcd;
   background-color: #ffffff;
   z-index: 1;
@@ -65,10 +64,8 @@
   position: absolute;
   left: 0;
   top: 0;
-
   width: 30px;
   height: 30px;
-
   background: url("../../img/svg/chb/tick.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -98,12 +95,10 @@
   .extra__legend {
     @include title-middle-tab;
     line-height: 36px;
-
     padding-left: 36px;
     padding-right: 38px;
     padding-bottom: 22px;
     margin-left: -35px;
-
     width: 290px;
   }
 
@@ -114,7 +109,6 @@
     top: 20px;
     left: 0;
     width: 100vw;
-
     z-index: -1;
   }
 
@@ -125,14 +119,12 @@
     top: 20px;
     right: 0;
     width: 100vw;
-
     z-index: -1;
   }
 
   .extra__list {
     display: flex;
     flex-wrap: wrap;
-
     padding-bottom: 21px;
   }
 
@@ -143,7 +135,6 @@
 
   .extra__item:nth-child(1),
   .extra__item:nth-child(3) {
-
     margin-right: 125px;
   }
 
@@ -160,7 +151,6 @@
   .extra__label::after {
     width: 40px;
     height: 40px;
-
     background: url("../../img/svg/chb/tick2.png");
     background-repeat: no-repeat;
     background-position: center;

@@ -2,9 +2,7 @@
   font-family: $font-one;
   line-height: 30px;
   flex-grow: 1;
-
   padding: 15px 13px;
-
   opacity: 0.5;
   height: 46px;
 }
@@ -25,7 +23,6 @@
 .field:focus {
   opacity: 1;
   color: black;
-
   outline: none;
   border: 2px solid black;
 }

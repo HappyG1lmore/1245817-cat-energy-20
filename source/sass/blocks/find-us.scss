@@ -8,9 +8,7 @@
 .find-us__wrapper {
   display: flex;
   flex-direction: column;
-
   width: 319px;
-
   margin: 0 auto;
 }
 
@@ -35,7 +33,6 @@
 .find-us__map {
   height: 365px;
   width: 100vw;
-
   display: flex;
 
   .map__img {
@@ -69,7 +66,6 @@
     width: 708px;
     display: flex;
     flex-direction: column;
-
     margin-bottom: 31px;
   }
 
@@ -87,14 +83,12 @@
     width: 155px;
     font-size: 20px;
     line-height: 25px;
-
     padding-top: 29px;
   }
 
   .find-us__map {
     height: 400px;
     width: 100vw;
-
     display: flex;
 
     .map__img {
@@ -106,11 +100,9 @@
     width: 175px;
     margin-left: auto;
     text-align: right;
-
     font-size: 16px;
     line-height: 20px;
     font-family: $font-two;
-
     padding-top: 27px;
 
     span {
@@ -129,7 +121,6 @@
   .find-us__wrapper {
     width: 1220px;
     position: relative;
-
     margin: 0 auto;
   }
 
@@ -162,7 +153,6 @@
   .find-us__adress {
     padding: 0;
     text-align: start;
-
     margin-left: auto;
     margin-top: 14px;
   }

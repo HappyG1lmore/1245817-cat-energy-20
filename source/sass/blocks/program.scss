@@ -8,7 +8,6 @@
 .program__form {
   display: flex;
   flex-direction: column;
-
   @include title-small;
   line-height: 18px;
   text-transform: uppercase;

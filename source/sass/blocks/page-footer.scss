@@ -30,7 +30,6 @@
   padding-bottom: 20px;
   margin-bottom: 15px;
   list-style: none;
-
   position: relative;
 
   a {
@@ -39,7 +38,6 @@
 
   &::after {
     content: "";
-
     position: absolute;
     border: solid 1px black;
     width: 100%;
@@ -50,7 +48,6 @@
 
   &::before {
     content: "";
-
     position: absolute;
     border: solid 1px black;
     width: 100%;
@@ -103,7 +100,6 @@
     margin: 0;
     padding-top: 16px;
     padding-left: 153px;
-
     width: 135px;
     justify-content: flex-start;
   }
@@ -111,7 +107,6 @@
   .page-footer__social::after,
   .page-footer__social::before {
     content: "";
-
     display: none;
   }
 
